@@ -1,8 +1,7 @@
 import express from "express";
 import App from "./services/ExpressApp";
 import dbConnection from "./services/Database";
-
-const PORT = 8000;
+import { PORT } from "./config";
 
 const startServer = async () => {
   const app = express();
